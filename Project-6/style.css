@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Marcellus SC", serif;
+    width: 100%;
+    background-color: pink;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.screen {
+    display: flex;
+}
+
+button {
+    border: none;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 50px;
+    width: 100px;
+    background-color: rgba(0, 0, 0, 0.653);
+    color: rgba(255, 255, 255, 0.877);
+    font-size: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s, box-shadow 0.2s; 
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.772);
+    color: rgba(255, 255, 255, 1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+
+/* Responsive Design */
+/* Just a little try */
+@media only screen and (max-width: 400px){
+    .container{
+        width: 100%;
+        font-size: 10px;
+    }
+    .button-container{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}

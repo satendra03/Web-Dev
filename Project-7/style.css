@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap');
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Original Surfer", sans-serif;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #101820;
+}
+
+.container {
+    margin: 10px;
+    font-size: 1.5em;
+    width: auto;
+    height: auto;
+    color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-container {
+    border: 1px solid #ccc;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 200px;
+    width: 50%;
+    padding: 2em;
+    line-height: 120%;
+}
+#msgAfterBtnPress {
+    display: none;
+    font-style: italic;
+    color: #666;
+    padding-left: 10px;
+    margin: 10px 0;
+}
+.again-container,
+.win-container {
+    height: auto;
+    width: 50%;
+    min-height: 200px;
+    padding: 2em;
+    border: 1px solid #ccc;
+}
+.again-container,
+.win-container {
+    display: none;
+}
+
+
+button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    /* background-color: #0056b3;  */
+    background-color: green;
+}
+
+.no:hover {
+    background-color: red;
+}
+
+input[type="number"] {
+    padding: 5px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: auto;
+    margin: 10px;
+}
+
+#credits
+{
+    font-size: 0.8em;
+    text-align: center;
+    align-self: center;
+}
+#credits>a{
+    color: #666;
+    text-decoration: none;
+}
+#text{
+    color: #666;
+}

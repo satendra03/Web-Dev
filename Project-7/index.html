@@ -1,0 +1,54 @@
+<!-- Dive into the excitement of our latest game creation! Armed with just five chances, can you crack the code of a randomly generated multiple? Using HTML, CSS, and JS, we've crafted an addictive challenge that blends luck and strategy. Click 'generate' to unveil the mystery number and test your numerical prowess. Will you conquer the odds, or succumb to the challenge? Find out now! -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Hunt | Satendra Kumar Parteti</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main Container -->
+        <div class="main-container">
+            <h3>Generate A random Number</h3>
+            <br>
+            <button type="button" onclick="generateRandomNo()">Click Me!</button>
+            <br>
+            <p id="msgAfterBtnPress">A random 2 digit number is generated<br>Guess the number<br></p>
+            <div class="random-no-screen">
+                <p id="random-no"></p>
+            </div>
+            
+            <h3>Guess the Number</h3>
+            <label for="inputNumber"><h2>Enter a Number:</h2></label>
+            <input id="inputNumber" type="number"><br>
+            <button type="button" onclick="check()">Check</button>
+            <br>
+            <span>Remaining chances: </span><span id="chances">5</span>
+            <br>
+            <p id="text"></p>
+        </div>
+
+         <!-- Again Container -->
+        <div class="again-container">
+            <h1>Try Again</h1>
+            <button type="button" onclick="again()">YES</button>
+            <button class="no" type="button" onclick="notAgain()">NO</button>
+        </div>
+
+         <!-- Win Container  -->
+        <div class="win-container">
+            <p>Congratulations! <br>You're the master of numbers in <br> 'Number Hunt'.</p><br>
+            <p>Well done on your win!</p>
+            <button type="button" onclick="again()">Again</button>
+            <button class="no" type="button" onclick="notAgain()">NO</button>
+        </div>
+    </div>
+    <div class="credits-container">
+        <h6 id="credits"><a href="www.instagram.com/_satendra_03">© Satendra Kumar Parteti</a></h6>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

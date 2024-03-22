@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Arimo:ital,wght@0,400..700;1,400..700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Arimo", sans-serif;
+}
+html, body {
+    height: 100%;
+    width: 100%;
+}
+.container{
+    height: 100%;
+    width: 100%;
+    /* background-color: pink; */
+}
+nav {
+    height: 50px;
+    display: flex;
+    position: sticky;
+    z-index: 999;
+    top: 0vh;
+    justify-content: space-evenly;
+    text-align: center;
+    background-color: white;
+    padding: 10px;
+}
+nav .logo img {
+    height: 100%;
+}
+.logo img:hover{
+    cursor: pointer;
+}
+nav .links{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    font-weight: bolder;
+}
+.links a:hover {
+    cursor: pointer;
+}
+nav a {
+    color: black;
+    text-decoration: none;
+}
+nav .input-container{
+    display: flex;
+    align-items: center;
+}
+.input-container input {
+    font-family: "Arimo";
+    border: 1px solid black;
+    height: 100%;
+    width: 50vw;
+    border: none;
+    background-color: rgb(200, 200, 200);
+    border-radius: 50px;
+    padding-left: 20px;
+}
+.pin-container{
+    margin-left: 2px;
+    background-color: rgb(200, 200, 200);
+    height: 100%;
+    display: flex;
+    width: 100px;
+    justify-content: space-evenly;
+    border: none;
+    border-radius: 50px;
+    align-items: center;
+}
+.icons{
+    height: 100%;
+    display: flex;
+    width: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.icons a i {
+    font-size: 30px;
+    color: #575656;
+
+}
+.icons .profile {
+    padding: 1px;
+    height: 50px;
+    width: 50px;
+    border: 1px solid #575656;
+    border-radius: 50%;
+}
+.profile img {
+    transform: scaleX(-1);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.posts {
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+    padding-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 10px;
+}
+.posts img{
+    width: 100%;
+}
+.items{
+    text-align: center;
+    overflow: hidden; /* Hide overflowing content */
+    background-size: cover; /* Cover the entire div with the background image */
+    background-position: center;
+    border-radius: 10px;
+}
+.items1{
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.items4{
+    grid-column-start: 4;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+.items6{
+    grid-column-start: 2;
+    grid-row-start: 2;
+    grid-row-end: 4;
+}
+.items12{
+    grid-row-start: 3;
+    grid-row-end: 5;
+    grid-column-start: 5;
+    grid-column-end: 6;
+}
+.items13{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+.items18{
+    grid-column-start: 3;
+    grid-column-end: 5;
+}
+
+#overlayField{
+    position: absolute;
+    top: 85px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 25px);
+    background-color: rgba(0, 0, 0, 0.7); 
+    display: none;
+}
+#searchField{
+    padding: 10px;
+    height: 20%;
+    width: 50vw;
+    position: sticky;
+    top: 70px;
+    left: 26%;
+    border-radius: 10px;
+    background-color: white;
+    display: none;
+    overflow: scroll; /* Hide the overflow content */
+    white-space: nowrap; /* Prevent text wrapping */
+    text-overflow: ellipsis;
+}
+.searchText {
+    font-size: 20px;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 10px;
+}
+.searchText:hover{
+    cursor: pointer;
+}
+img:hover{
+    opacity: 55%;
+    cursor: pointer;
+}

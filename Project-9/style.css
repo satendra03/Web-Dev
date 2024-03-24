@@ -1,0 +1,489 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Dosis", sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-dark);
+
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+:root {
+    --primary-dark: #222831;
+    --secondary-dark: #393E46;
+    --primary-light: #00ADB5;
+    --secondary-light: #EEEEEE;
+    --border-radius: 0.5em;
+    --padding: 0.5em;
+    --left-padding: 3em;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+}
+
+.heading {
+    color: var(--primary-light);
+    width: 100%;
+    text-align: center;
+    padding-top: calc(var(--padding) - 2em);
+    padding-bottom: calc(var(--padding) - 2em);
+    cursor: pointer;
+    font-size: 2em;
+}
+
+.inputField-menu {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    padding: var(--padding);
+}
+
+.inputField-menu input {
+    height: 2.5em;
+    width: 90%;
+    border-radius: var(--border-radius);
+    padding-left: 1em;
+    font-size: 1.3em;
+}
+
+input::-webkit-input-placeholder {
+    color: var(--secondary-dark);
+    opacity: 0.4;
+}
+
+.inputField-menu i {
+    background-color: var(--primary-light);
+    border-radius: var(--border-radius);
+    padding: var(--padding);
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.line {
+    margin: var(--padding) 0;
+    height: 0.5em;
+    width: 100%;
+    background-color: white;
+}
+
+.main {
+    padding-left: var(--left-padding);
+    padding-right: var(--left-padding);
+    height: 35em;
+}
+
+.most-popular {
+    padding: var(--padding);
+    color: var(--primary-light);
+}
+
+.section-heading {
+    font-size: 2em;
+}
+
+.suggestions {
+    height: 25em;
+    width: 100%;
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: repeat(5, 1fr);
+}
+
+.main-suggestion {
+    background-color: wheat;
+    border-radius: var(--border-radius);
+    display: grid;
+    grid-template-rows: 80% 20%;
+    padding: var(--padding);
+    grid-gap: 0.3em;
+}
+
+.img-suggestion {
+    border-radius: var(--border-radius);
+    height: 100%;
+    background-color: cadetblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: fill;
+}
+
+.img-suggestion img {
+    border-radius: var(--border-radius);
+}
+
+.text-suggestion {
+    border-radius: var(--border-radius);
+    background-color: cadetblue;
+    padding: var(--padding);
+    color: var(--secondary-dark);
+    overflow: hidden;
+}
+
+.name-suggestion {
+    font-size: 1.5em;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.price-suggestion {
+    font-size: 1em;
+}
+
+.price-addBtn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add-to-cart {
+    background-color: royalblue;
+    padding: 0.5em;
+    border-radius: 150px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-to-cart:hover {
+    color: white;
+    transform: rotate(45deg);
+    background-color: rgb(43, 69, 149);
+    box-shadow: 0 0 2px 2px rgb(35, 55, 116);
+}
+
+.credits {
+    border: 2px solid red;
+    width: 100%;
+    color: var(--secondary-light);
+    /* font-size: 1em; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links {
+    border: 2px solid yellow;
+    width: 20%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 2em;
+}
+
+.links a {
+    color: var(--secondary-light);
+}
+
+#overlayField {
+    position: absolute;
+    top: 10em;
+    left: 0;
+    width: 100%;
+    height: calc(100% - 10em);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+}
+
+#searchField {
+    display: none;
+    overflow: scroll;
+    position: absolute;
+    background-color: white;
+    border-radius: 0.5em;
+
+    top: 9em;
+    left: 1.5em;
+    width: 89%;
+    height: 15em;
+}
+
+.searchText {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.3em;
+    padding: 0.25em;
+    margin: 0.25em;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 0.5em;
+}
+
+.searchText:hover {
+    cursor: pointer;
+}
+
+.img-suggestion {
+    overflow: hidden;
+}
+
+.img-suggestion img {
+    object-fit: cover;
+}
+
+#cartField {
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: var(--left-padding);
+    height: 100vh;
+    width: 100vw;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+    display: none;
+}
+
+.cart-items {
+    margin: var(--padding);
+    padding: var(--padding);
+    display: flex;
+    gap: 1em;
+    justify-content: flex-start;
+    border-radius: var(--border-radius);
+    width: 90%;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    height: 29em;
+}
+
+.cart-items .main-suggestion {
+    min-width: 15em;
+    box-shadow: 0 0 5px 5px rgba(252, 252, 252, 0.015);
+}
+
+.cart-items img {
+    width: auto;
+    height: 100%;
+}
+
+.cut {
+    font-size: 2.5em;
+    border-radius: 50px;
+    background-color: blue;
+    padding: var(--padding);
+}
+
+.cut:hover {
+    cursor: pointer;
+}
+
+#cartField:hover {
+    background-color: rgba(255, 255, 255, 0.015);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.total {
+    border-top: 3px solid black;
+    text-align: center;
+    font-size: 2em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width: 1024px) {
+    .main {
+        padding-left: calc(var(--left-padding) - 1.8em);
+        padding-right: calc(var(--left-padding) - 1.8em);
+        height: 100%;
+    }
+
+    .heading {
+        font-size: 2em;
+    }
+
+    .inputField-menu input {
+        width: 70%;
+        height: 2em;
+    }
+
+    .inputField-menu i {
+        padding: 0.4em;
+    }
+
+    .main-suggestion {
+        width: 90%;
+        margin: 0 auto;
+        grid-template-rows: 80% 15%;
+
+    }
+
+    .section-heading {
+        font-size: 1.4em;
+    }
+
+    .suggestions {
+        grid-template-columns: repeat(2, 1fr);
+        height: 65em;
+    }
+
+    .section-heading {
+        padding: calc(var(--padding) + 10px);
+        font-size: 2.2em;
+    }
+
+    .credits {
+        height: 5em;
+    }
+
+    #searchField {
+        top: 7.8em;
+        left: 3.5em;
+        width: 68%;
+        height: 10em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main {
+        padding-left: calc(var(--left-padding) - 1.8em);
+        padding-right: calc(var(--left-padding) - 1.8em);
+        height: 100%;
+    }
+
+    .heading {
+        font-size: 1.7em;
+    }
+
+    .inputField-menu input {
+        width: 70%;
+        height: 2em;
+    }
+
+    .inputField-menu i {
+        padding: 0.4em;
+    }
+
+    .main-suggestion {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .img-suggestion {
+        overflow: hidden;
+    }
+
+    .section-heading {
+        font-size: 1.4em;
+    }
+
+    .suggestions {
+        grid-template-columns: repeat(2, 1fr);
+        height: 75em;
+    }
+
+    .section-heading {
+        padding: calc(var(--padding) + 10px);
+        font-size: 2.2em;
+    }
+
+    #searchField {
+        top: 7.8em;
+        left: 3.5em;
+        width: 68%;
+        height: 10em;
+    }
+
+    .cut {
+        font-size: 1.7em;
+    }
+
+    .cart-items {
+        display: block;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .cart-items .main-suggestion {
+        max-width: 10em;
+    }
+
+    .total {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .main {
+        padding-left: calc(var(--left-padding) - 2.5em);
+        padding-right: calc(var(--left-padding) - 2.5em);
+        height: auto;
+    }
+
+    .heading {
+        font-size: 1.4em;
+    }
+
+    .inputField-menu input {
+        width: 50%;
+        height: 1.7em;
+    }
+
+    .main-suggestion {
+        width: 95%;
+        margin: 0 auto;
+        grid-template-rows: 75% 25%;
+        overflow: hidden;
+        font-size: 0.7em;
+        height: 30em;
+    }
+
+    .img-suggestion {
+        overflow: hidden;
+    }
+
+    .section-heading {
+        font-size: 1.2em;
+    }
+
+    .suggestions {
+        grid-template-columns: repeat(1, 1fr);
+        height: 110em;
+    }
+
+    .section-heading {
+        padding: calc(var(--padding) + 10px);
+        font-size: 2.2em;
+        text-align: center;
+    }
+
+    #searchField {
+        top: 6.7em;
+        left: 2.8em;
+        width: 50%;
+        height: 10em;
+    }
+
+    .cut {
+        font-size: 1em;
+    }
+
+    .total {
+        font-size: 1em;
+    }
+}

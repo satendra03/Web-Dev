@@ -98,6 +98,7 @@ function addToCart() {
             cart.push(animeData[event.target.dataset.index]);
             updateCart();
             total += animeData[event.target.dataset.index].price;
+            document.querySelector('.total').innerHTML = `<h2>Total: ${total}</h2>`;
         }
     });
 };
@@ -115,7 +116,6 @@ function updateCart() {
         </div>`;
     });
     document.querySelector('.cart-items').innerHTML = cartItems;
-    document.querySelector('.total').innerHTML = `<h2>Total: ${total}</h2>`;
 };
 
 document.querySelector('#shoppingcart').addEventListener('click', function () {

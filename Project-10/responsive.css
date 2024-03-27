@@ -1,0 +1,388 @@
+/* Responsive */
+@media screen and (min-width: 1025px) {
+    .left-top-container {
+        font-size: 1.3em;
+    }
+
+    .left-mid {
+        font-size: 1.3em;
+    }
+
+    .library-text h5 {
+        display: 1.5em;
+    }
+
+    .playlist h4 {
+        font-size: 1em;
+    }
+
+    .playlist p {
+        font-size: 0.8em;
+    }
+
+    .button {
+        padding: 0.7em;
+        font-size: 0.7em;
+        font-weight: 600;
+    }
+
+    .button:hover {
+        font-size: 0.8em;
+    }
+
+    .left-bottom {
+        font-size: 1.3em;
+    }
+
+    .links {
+        font-size: 0.8em;
+    }
+
+    .language button {
+        font-size: 0.9em;
+    }
+
+    .allsongs-heading {
+        font-size: 1.8em;
+    }
+
+    .song-img {
+        width: 4em;
+    }
+
+    .name {
+        font-size: 1.3em;
+    }
+
+    .details {
+        font-size: 0.9em;
+    }
+
+    .menu-overlay {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .left-top-container {
+        font-size: 1em;
+    }
+
+    .left-mid {
+        font-size: 1em;
+    }
+
+    .library-text h5 {
+        font-size: 0.7em;
+    }
+
+    .playlist h4 {
+        font-size: 0.7em;
+    }
+
+    .playlist p {
+        font-size: 0.5em;
+    }
+
+    .button {
+        padding: 0.5em;
+        font-size: 0.5em;
+        font-weight: 500;
+    }
+
+    .button:hover {
+        font-size: 0.6em;
+    }
+
+    .left-bottom {
+        font-size: 1em;
+    }
+
+    .links {
+        font-size: 0.5em;
+    }
+
+    .language button {
+        font-size: 0.7em;
+    }
+
+    .allsongs-heading {
+        font-size: 1.5em;
+    }
+
+    .song-img {
+        width: 3em;
+    }
+
+    .name {
+        font-size: 1em;
+    }
+
+    .details {
+        font-size: 0.7em;
+    }
+
+    .menu-overlay,
+    .music-overlay {
+        display: none;
+    }
+
+    .search-overlay-container {
+        max-height: 80%;
+        overflow: scroll;
+    }
+}
+
+@media screen and (max-width:768px) {
+    .heading {
+        justify-content: space-between;
+        padding-left: 0.5em;
+    }
+
+    .heading .menu {
+        display: block;
+    }
+
+    .heading h1 {
+        font-size: 2.5em;
+        margin: 0 auto;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .mid {
+        width: 60%;
+    }
+
+    .library-text h5 {
+        font-size: 0.7em;
+    }
+
+    .current-song-name {
+        font-size: 1.5em;
+    }
+
+    .current-song-singers {
+        font-size: 0.7em;
+    }
+
+    .current-song-description {
+        font-size: 0.6em;
+    }
+
+    .right {
+        font-size: 1em;
+        width: 40%;
+    }
+
+    .current-song-img {
+        width: 100%;
+    }
+
+    .section-1 {
+        padding: 0.5em;
+    }
+
+    .section-1-container {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.518);
+        background-color: #323131;
+        padding: 0.5em;
+        gap: 0.5em;
+    }
+
+    .section-1-container-items {
+        border-radius: 0.5em;
+    }
+
+    .section-2-container {
+        padding: 0.5em;
+        min-height: 15em;
+    }
+
+    .library-text {
+        font-size: 1.5em;
+    }
+
+    .section-2-playlist {
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.518);
+        min-height: 15em;
+        justify-content: space-evenly;
+    }
+
+    .section-2-first-playlist,
+    .section-2-podcast {
+        font-size: 1.3em;
+    }
+
+    .section-3 {
+        padding: 0.5em;
+    }
+
+    .section-3-container {
+        padding: 0.5em;
+        font-size: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 0.7em;
+        background-color: #323131;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.518);
+        border-radius: 0.5em;
+    }
+
+    .music-overlay-song {
+        background-color: #323131;
+        border: none;
+    }
+
+    .music-overlay-container {
+        max-height: 35em;
+    }
+
+    .music-overlay-allsongs-list {
+        max-height: 30em;
+    }
+
+    .search-overlay-container {
+        width: 90%;
+    }
+
+    .search-overlay input {
+        max-height: 0.6em;
+    }
+
+    .search-results {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .search-song {
+        max-height: 6em;
+        gap: 0em;
+    }
+
+    .search-song-name {
+        font-size: 1em;
+    }
+
+    .search-song-details {
+        font-size: 0.8em;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .search-song-artist {
+        overflow-x: scroll;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .heading {
+        justify-content: space-between;
+    }
+
+    .heading .songlist {
+        display: block;
+    }
+
+    .heading h1 {
+        font-size: 1.7em;
+    }
+
+    .left {
+        display: none;
+    }
+
+    .mid {
+        width: 100%;
+    }
+
+    .library-text h5 {
+        font-size: 0.5em;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .current-song-img {
+        min-height: 18em;
+        width: 100%;
+    }
+
+    .section-3 {
+        font-size: 1em;
+    }
+
+    .search-overlay-container {
+        width: 90%;
+    }
+
+    .search-overlay input {
+        max-height: 0.6em;
+    }
+
+    .search-results {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .search-song {
+        max-height: 6em;
+        gap: 0em;
+    }
+
+    .search-song-name {
+        font-size: 1em;
+    }
+
+    .search-song-details {
+        font-size: 0.8em;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .search-song-artist {
+        overflow-x: scroll;
+    }
+
+}
+
+@media screen and (max-width:320px) {
+    .section-3 {
+        font-size: 0.9em;
+    }
+
+    .search-overlay-container {
+        width: 90%;
+    }
+
+    .search-overlay input {
+        max-height: 0.6em;
+    }
+
+    .search-results {
+        width: 100%;
+        padding: 0.5em;
+    }
+
+    .search-song {
+        max-height: 6em;
+        gap: 0em;
+    }
+
+    .search-song-name {
+        font-size: 1em;
+    }
+
+    .search-song-details {
+        font-size: 0.8em;
+        white-space: nowrap;
+        overflow-x: scroll;
+    }
+
+    .search-song-artist {
+        overflow-x: scroll;
+    }
+}

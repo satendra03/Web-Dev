@@ -132,6 +132,9 @@ body {
         height: 10%;
         font-size: 0.7em;
     }
+    .button{
+        font-size: 4em;
+    }
 }
 @media screen and (max-width: 480px) {
     .game-heading{
@@ -148,6 +151,9 @@ body {
     }
     .btn{
         padding: 10px;
+    }
+    .button{
+        font-size: 3em;
     }
 }
 @media screen and (max-width: 400px) {
@@ -166,6 +172,9 @@ body {
     .btn{
         padding: 10px;
     }
+    .button{
+        font-size: 2em;
+    }
 }
 @media screen and (max-width: 325px){
     .game-heading{
@@ -182,5 +191,8 @@ body {
     }
     .btn{
         padding: 5px;
+    }
+    .button{
+        font-size: 1em;
     }
 }

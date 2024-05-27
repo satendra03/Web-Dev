@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    /* Font for Hero page */
+    font-family: heropagefont;
+    src: url(Fonts/PPNeueMachina_\ Light.woff);
+}
+@font-face {
+    /* Font for Hero page Medium*/
+    font-family: heropagefont-medium;
+    src: url(Fonts/PP\ Neue\ Machina\ Inktrap\ Medium.woff);
+}
+@font-face {
+    font-family: Satoshi;
+    src: url(Fonts/Satoshi-Variable.ttf);
+}
+::-webkit-scrollbar{
+    display: none;
+}
+:root {
+    --black: black;
+    --white: white;
+    --royalblue: royalblue;
+    --Droyalblue: rgb(20, 29, 55);
+    --lightgreen: lightgreen;
+    --Dlightgreen: rgb(43, 73, 43);
+    --darkturquoise: darkturquoise;
+    --Ddarkturquoise: rgb(0, 79, 83);
+    --slateblue: slateblue;
+    --Dslateblue: rgb(22, 18, 49);
+    --Burlywood: Burlywood;
+    --DBurlywood: rgb(53, 43, 31);
+    --powderblue: powderblue;
+    --Dpowderblue: rgb(36, 49, 52);
+    --salmon: #EF9D71;
+    --Dsalmon: #90502e;
+    --lime: #3dfd3d;
+    --Dlime: #015701;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: 'Poppins', sans-serif; */
+    /* font-family: 'Satoshi', sans-serif; */
+    /* font-family: 'heropagefont', sans-serif;  */
+    font-family: 'heropagefont-medium', sans-serif;
+}
+html,body{
+    height: 100vh;
+    width: 100vw;
+}
+*::selection{
+    background-color: #EF9D71;
+}
+
+.all-row{
+    padding: 3rem;
+}
+.decs-arrow{
+    transition: .2s;
+    transform: rotate(-45deg);
+}
+.desc-btn:hover > .masker .decs-arrow{
+    transform: rotate(0deg);
+}
+
+.font-pop{
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Satoshi', sans-serif; */
+}
+.bottom-text{
+    font-size: small;
+}
+.rowimg{
+    height: 40px;
+    width: 40px;
+}
+.icons-color{
+    color: #061C3D;
+}
+.slide-3-icons-1, .rocket{
+    color: white;
+}
+
+.videodiv{
+    clip-path: circle(var(--clip) at 50% 50%);
+}
+.font{
+    font-family: heropagefont-medium;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Themes */
+body[theme="black"]{
+    background-color: var(--black);
+}
+body[theme="black"] .section{
+    color: var(--white);
+}
+body[theme="white"]{
+    background-color: var(--white);
+}
+body[theme="white"] .section{
+    color: var(--black);
+}
+body[theme="royalblue"]{
+    background-color: var(--royalblue);
+}
+body[theme="royalblue"] .section{
+    color: var(--Droyalblue);
+}
+body[theme="lightgreen"]{
+    background-color: var(--lightgreen);
+}
+body[theme="lightgreen"] .section{
+    color: var(--Dlightgreen);
+}
+
+body[theme="darkturquoise"] {
+    background-color: var(--darkturquoise);
+}
+
+body[theme="darkturquoise"] .section {
+    color: var(--Ddarkturquoise);
+}
+
+body[theme="slateblue"] {
+    background-color: var(--slateblue);
+}
+
+body[theme="slateblue"] .section {
+    color: var(--Dslateblue);
+}
+
+body[theme="Burlywood"] {
+    background-color: var(--Burlywood);
+}
+
+body[theme="Burlywood"] .section {
+    color: var(--DBurlywood);
+}
+
+body[theme="powderblue"] {
+    background-color: var(--powderblue);
+}
+
+body[theme="powderblue"] .section {
+    color: var(--Dpowderblue);
+}
+body[theme="salmon"]{
+    background-color: var(--salmon);
+}
+body[theme="salmon"] .section {
+    color: var(--Dsalmon);
+}
+body[theme="lime"]{
+    background-color: var(--lime);
+}
+body[theme="lime"] .section {
+    color: var(--Dlime);
+}
+body{
+    transition: ease-out .5s;
+}   
+.picture, .bluelayer{
+    transition: ease-out .2s;
+}
+.overlay{
+    transition: .3s ease-out;
+}

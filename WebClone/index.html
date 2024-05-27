@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Significo - Satendra</title>
+    <!-- tailwind link -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="body" theme="black">
+    <div class="main w-full">
+
+        <div class="last rounded-full h-20 w-20 cursor-pointer fixed z-[100001] right-10 bottom-8 flex items-center justify-center"><a href="#MORE"><i class=" text-5xl fa-solid fa-arrow-down"></i></a></div>
+        <div class="overlay h-screen w-screen z-[999] opacity-0 fixed top-0 left-0"></div>
+        <nav class="navbar section z-[1000] font w-screen h-20 fixed top-0 text-white flex items-center justify-between p-5">
+            <div class="logo h-full w-[50%]"></div>
+            <div class="options w-[50%] h-full flex items-center justify-evenly">
+                <ul class="flex items-center justify-around gap-9 cursor-pointer">
+                    <li class="li-btn"><a class="animate-button" href="#HOME">Home</a></li>
+                    <li><a href="#DESCRIPTION">About Us</a></li>    
+                    <li><a href="#STATISTICS">Statistics</a></li>
+                    <li><a href="#TEAM">Team</a></li>
+                    <li><a href="#MORE">More</a></li>
+                    <li><a href="#REVIEWS">Reviews</li>
+                </ul>
+                <button class="p-2 rounded-md bg-orange-400 text-white">Contact Us</button>
+            </div>
+        </nav>
+
+
+        <!-- section is added for text color acc to theme col-->
+        <div data-color="black" id="HOME" class="parent home overflow-hidden section w-full h-[100vh] relative section">
+            <div class="cont w-full">
+                <!-- Bottom text -->
+            <div class="bottomtext z-10 absolute bottom-[3%] left-6">
+                <h3 class="font-pop bottom-text">We build big ideas.</h3>
+                <h3 class="font-pop bottom-text">Software. Apps. Tools.</h3>
+                <h3 class="font-pop bottom-text">For real people. Real lives.</h3>
+            </div>
+            <!-- remove hidden -->
+            <div style="--clip: 80%" class="videodiv z-[3] w-full h-screen absolute top-0 left-0 overflow-hidden">
+                <video class=" scale-[1.1] absolute h-screen w-full top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2" src="https://cdn.significo.com/videos/significo-main-hero.mp4" muted loop autoplay></video>
+            </div>
+            <!-- overflow-hidden -->
+            <div class="marqueescontainer h-screen w-full relative overflow-hidden">
+                <div class="herotopcontainer mt-20 absolute left-1/2 -translate-x-1/2 top-[5%] w-72 text-center">
+                    <h2 class="herotoptext font-pop text-xl">Crafting a new paradigm of healthcare, one that is</h2>
+                </div>
+                <!-- scale-[4] insert in class -->
+                <div class="all-row  absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full whitespace-nowrap">
+
+                    <div class="rows first py-3 -translate-x-1/2 w-full flex items-center gap-4">
+                        <!-- 1st row -->
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">intuitive</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem] rounded-full overflow-hidden">
+                            <img class="object-cover" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">useful</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">resonant</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">dynamic</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">impactful</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1712847331925-bf0e3fd2b7ae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">synergistic</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="bg-top" src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">transformative</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">empowering</h2>
+                        </div>
+                    </div>
+
+                    <div class="rows second py-3 -translate-x-1/3 w-full flex items-center gap-4">
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">profound</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://plus.unsplash.com/premium_photo-1669703777663-a45e924bcda0?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">radiant</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">ingenious</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">serendipitous</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1517805686688-47dd930554b2?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">enriching</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/flagged/photo-1559855603-ce4c8f480d76?q=80&w=388&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">harmonious</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1546961342-ea5f71b193f3?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">persuasive</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1508002366005-75a695ee2d17?q=80&w=368&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">visionary</h2>
+                        </div>
+                    </div>
+
+                    <div class="rows third py-3 -translate-x-1/2 w-full flex items-center gap-4">
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">profound</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1489424731084-a5d8b219a5bb?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">radiant</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1517841905240-472988babdf9?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">ingenious</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">serendipitous</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1464863979621-258859e62245?q=80&w=386&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">enriching</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1516726817505-f5ed825624d8?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">harmonious</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1535295972055-1c762f4483e5?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">persuasive</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1531923610693-c816870f3b44?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">visionary</h2>
+                        </div>
+                    </div>
+
+                    <div class="rows fourth py-3 -translate-x-1/3 w-full flex items-center gap-4">
+                        <!-- 4th row -->
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">luminescent</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1714426533669-656bbfa37cfa?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">enigmatic</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1496440737103-cd596325d314?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">majestic</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1450297350677-623de575f31c?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">dynamic</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1479936343636-73cdc5aae0c3?q=80&w=880&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">transcendent</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1525134479668-1bee5c7c6845?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">reverent</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]   rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1531927557220-a9e23c1e4794?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">enthralling</h2>
+                            <div class="rowimg w-[3.5rem] h-[3.5rem]    rounded-full overflow-hidden">
+                            <img class="" src="https://images.unsplash.com/photo-1492462543947-040389c4a66c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        </div>
+                        <div class="row flex items-center gap-4">
+                            <h2 class="text-5xl font-semibold">ethereal</h2>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+            </div>
+        </div>
+        <!-- Home section is done -->
+
+        <!-- Description is now created -->
+        <div data-color="royalblue" id="DESCRIPTION" class="parent  description section w-screen flex items-start justify-between gap-10 px-3 py-16">
+            <div class="desc-text w-[45%] px-3 sticky left-3 top-[10%]">
+                <p class="section font-pop text-2xl leading-[2.5rem]">Significo is a custom health software developer founded on the belief that technology can transform healthcare to put people first. We put humanity back at the center of healthcare by simplifying complexity, accelerating capacity, improving outcomes.</p>
+                <h1 class="section text-7xl font-thin leading-[6rem] mt-9 mb-9">We Craft <br> Human-Centric Health Software</h1>
+
+                <div class="desc-btn section flex items-center justify-between border w-2/5 p-6 text-lg uppercase">
+                    <div class="masker flex items-center justify-between w-full overflow-hidden">
+                        <span class="inline-block">Our Solution</span>
+                        <i class="decs-arrow fa-sharp fa-solid fa-arrow-right"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="desc-cards w-1/2 p-3 section text-2xl">
+                <!-- Random Text  -->Significo is a custom health software developer founded on the belief that technology can transform healthcare to put people first. At the core of our mission is the commitment to rehumanize healthcare by simplifying its complexity, accelerating capacity, and ultimately improving patient outcomes. Our philosophy is grounded in the idea that technological innovation should serve the people who use it, making their experiences smoother, more efficient, and more effective. <br>
+
+Our journey began with the recognition that the healthcare industry, despite its critical importance, often struggles with outdated processes, inefficiencies, and a lack of user-centric solutions. At Significo, we saw an opportunity to address these challenges head-on. We believe that by leveraging advanced technology, we can bridge gaps, streamline operations, and create a healthcare environment where both providers and patients can thrive. <br>
+
+One of the hallmarks of Significo is our relentless focus on simplifying complexity. Healthcare is inherently complex, with numerous systems, regulations, and processes that must be navigated daily. Our team excels at identifying these complexities and developing solutions that make them manageable. We design intuitive interfaces and workflows that are easy to understand and use, reducing the cognitive load on healthcare professionals and allowing them to focus more on patient care. <br>
+
+Accelerating capacity is another critical aspect of our work. Healthcare providers often face overwhelming demands with limited resources. Our software solutions are designed to enhance the efficiency of healthcare operations, enabling providers to do more with less. Whether it's through automated administrative tasks, optimized scheduling systems, or advanced data analytics, we provide tools that help healthcare facilities operate at peak capacity without compromising the quality of care. <br>
+
+Improving outcomes is at the heart of everything we do. We understand that better healthcare outcomes are not just about efficiency but also about delivering care that is patient-centered and effective. Our solutions are built with the patient in mind, ensuring that every interaction, whether it's through telehealth services, electronic health records, or patient engagement platforms, is seamless and beneficial. We use data-driven insights to continually refine our products, ensuring they meet the highest standards of care and adapt to the evolving needs of the healthcare industry. <br>
+
+The Significo team comprises experts from various fields, including software development, healthcare management, and user experience design. This diverse expertise allows us to approach problems from multiple angles and develop comprehensive solutions that address both the technical and practical aspects of healthcare delivery. Our collaborative approach ensures that our software is not only technologically advanced but also grounded in real-world applications and user needs. <br>
+
+Our commitment to innovation drives us to stay at the forefront of technological advancements. We are constantly exploring new technologies, from artificial intelligence and machine learning to blockchain and the Internet of Things (IoT), to see how they can be applied to improve healthcare. By staying ahead of the curve, we ensure that our clients always have access to the most advanced and effective tools available. <br>
+
+At Significo, we believe that feedback is a crucial component of our development process. We actively seek input from our users, whether they are healthcare providers, patients, or administrative staff, to understand their experiences and identify areas for improvement. This feedback loop allows us to create products that truly meet the needs of those we serve and to make continuous enhancements that keep our solutions relevant and effective. <br>
+
+We also recognize the importance of security and compliance in healthcare technology. Protecting patient data and ensuring compliance with regulations such as HIPAA are top priorities for us. Our solutions are built with robust security measures and undergo rigorous testing to ensure they meet all necessary standards. This commitment to security gives our clients peace of mind, knowing that their data is safe and that they are in full compliance with all regulatory requirements. <br>
+
+In addition to our technical capabilities, Significo is deeply committed to fostering a culture of empathy and care. We understand that behind every data point and software interface are real people with real needs. Our team is dedicated to ensuring that our solutions not only meet technical specifications but also enhance the human experience in healthcare. We believe that technology should empower, not overwhelm, and that it should always be a tool for improving the human condition. <br>
+
+Our vision for the future of healthcare is one where technology and humanity are seamlessly integrated. We see a world where healthcare providers can focus on their patients without being bogged down by administrative burdens, where patients have easy access to their health information and can engage in their care meaningfully, and where the entire healthcare ecosystem operates more efficiently and effectively. <br>
+
+In conclusion, Significo is more than just a software developer; we are a partner in transforming healthcare. Our dedication to simplifying complexity, accelerating capacity, and improving outcomes drives everything we do. We are committed to making healthcare more human, more efficient, and more effective, ensuring that everyone involved can benefit from the power of technology. With Significo, the future of healthcare is bright, and we are excited to be at the forefront of this transformation.
+            </div>
+        </div>
+        <!-- Descri pton is done -->
+
+        <!-- Stats section Real Talks -->
+        <div data-color="lime" id="STATISTICS" class="parent  stats overflow-hidden section slides-section w-full">
+            <div class="stats-slides-container h-[400vh">
+                <!-- overflow-hidden -->
+                <div class="slides sticky top-0 left-0 w-full h-[100vh] flex">
+                    <div class="slide slide-1 flex items-center justify-center flex-shrink-0 h-screen w-screen">
+                        <div class="slide-1-text leading-none text-[6rem]">
+                            <h1>Real Talks,</h1>
+                            <h1>Real impact</h1>
+                        </div>
+                        <div class="slide-1-img h-[22rem] w-[22rem] z-[4] rounded-full absolute top-1/2 -translate-y-1/2 right-0 translate-x-2/3 overflow-hidden">
+                            <img class="h-full w-full object-cover" src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                    <div class="slide slide-2 flex-shrink-0 h-screen w-full flex items-center relative">
+                        <div class="slide-2-text text-7xl w-[60%] text-center relative left-44">
+                            <div class="slide-2-floating-text z-[5] absolute -top-8 -translate-x-1/5 -translate-y-1/2 w-80">
+                                <p class="text-xl font-pop text-left">
+                                    We&apos;re on a mission to impact as many lives as possible and build a better company while we do it. Here&apos;s our progress.</p>
+                            </div>
+                            <div class="slide-2-text">
+                                <h1 class="text-[10rem] text-white">20.4M</h1>
+                                <h1 class="text-4xl">Real people — real lives — we have built products and solutions for.</h1>
+                            </div>
+                            <div class="slide-2-img-big z-[6] -translate-y-1/4 translate-x-1/2 rounded-full absolute h-[10rem] w-[10rem] overflow-hidden">
+                                <img class="h-full object-cover w-full" src="https://images.unsplash.com/photo-1529446486093-51f0efc1178b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                        </div>
+                        <div class="slide-2-img-bigger rounded-full absolute left-1/2 bottom-0 translate-y-1/4 h-[20rem] w-[20rem] bg-red-500 overflow-hidden">
+                            <img class="h-full object-cover w-full" src="https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1727&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="slide-2-img-bigger rounded-full absolute top-0 left-1/4 -translate-y-2/3 h-[20rem] w-[20rem] bg-red-500 overflow-hidden">
+                            <img class="h-full topImage object-cover w-full" src="https://images.unsplash.com/photo-1597586124394-fbd6ef244026?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="slide-2-img-biggest z-[5] rounded-full right-0 absolute h-[22rem] w-[22rem] bg-blue-500 overflow-hidden">
+                            <img class="h-full topImage object-cover w-full" src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                    <div class="slide slide-3 flex-shrink-0 h-screen w-full flex items-center relative">
+                        <div class="slide-3-text leading-none text-7xl w-[60%] text-center relative left-32">
+                            <div class="slide-3-floating-text z-[5] absolute -top-8 -translate-x-1/3 -translate-y-1/2 w-80">
+                                <p class="text-xl font-pop text-left">Our team is global and diverse, because our individual experiences make us stronger.</p>
+                            </div>
+                            <div class="slide-3-text">
+                                <h1 class="text-[10rem] text-white">49%</h1>
+                                <h1 class="text-4xl">Expert Women in Tech.</h1>
+                            </div>
+                        </div>
+                        <div class="slide-3-icons-1 icons-color absolute flex items-center justify-center text-[14rem] top-1/2 translate-y-44 translate-x-64">
+                            <i class="rocket  fa-solid fa-rocket icons-color"></i>
+                        </div>
+                        <div class="slide-3-icons-1 icons-color flex items-center justify-center absolute text-[25rem] right-32">
+                            <i class="fa-solid fa-bolt"></i>
+                        </div>
+                        <div class="slide-3-icons-1 icons-color flex items-center justify-center absolute text-[10rem] left-72 -rotate-90 top-0">
+                            <i class="fa-solid fa-network-wired"></i>
+                        </div>
+                    </div>
+                    <div class="slide slide-4 flex-shrink-0 h-screen w-full flex items-center justify-center relative">
+                        <div class="slide-4-text leading-none text-7xl w-[60%] text-center relative left-32">
+                            <div class="slide-4-text">
+                                <h1 class="text-[10rem] text-white">13</h1>
+                                <h1 class="text-4xl">Nationalities Represented on Our Team.</h1>
+                            </div>
+                        </div>
+                        <div class="slide-4-img-corner z-[5] rounded-full top-0 right-0 translate-x-1/3 -translate-y-1/3 absolute h-[35rem] w-[35rem] overflow-hidden">
+                            <img class="h-full object-cover w-full" src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="slide-2-img-top rounded-full absolute top-0 left-1/4 -translate-x-1/2 -translate-y-1/3 h-[20rem] w-[20rem] overflow-hidden">
+                            <img class="h-full object-cover w-full" src="https://images.unsplash.com/photo-1599398766399-07f7a828044b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                        <div class="slide-4-img-bottom rounded-full absolute -translate-x-[35rem] bottom-0  h-[25rem] w-[25rem] bg-white  overflow-hidden">
+                            <img class="h-full object-cover w-full" src="https://images.unsplash.com/photo-1565777078232-a10610205e8b?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Stats and slide is done -->
+
+        <!-- Team Section -->
+        <div data-color="Burlywood" id="TEAM" class="parent  team section pt-10 w-screen mt-64 mb-9">
+            <h1 class="team-heading text-center text-light text-7xl tracking-tight">Our Team</h1>
+            <div class="list w-full flex flex-col items-center justify-center mt-10 px-10">
+                <!-- List-1 -->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">01</p>
+                            <p class="nameOfTeamMember opacity-90">Rick MaCartney</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">CEO</p>
+                    </div>
+                    <div class="picture opacity-0 shadow-xl overflow-hidden rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1503443207922-dff7d543fd0e?q=80&w=1854&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List-2 -->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">02</p>
+                            <p class="nameOfTeamMember opacity-90">Sylvia Miller</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">Chief Product Officer</p>
+                    </div>
+                    <div class="picture opacity-0 overflow-hidden shadow-xl rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 ">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1553457055-88e354f1257c?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List 3-->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">03</p>
+                            <p class="nameOfTeamMember opacity-90">Ethel Lindsey</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">CTO</p>
+                    </div>
+                    <div class="picture opacity-0 rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden shadow-xl">
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="object-cover">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List 4-->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">04</p>
+                            <p class="nameOfTeamMember opacity-90">Glenn Padilla</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">VP of Product</p>
+                    </div>
+                    <div class="picture opacity-0 rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden shadow-xl ">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1508341591423-4347099e1f19?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List 5-->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">05</p>
+                            <p class="nameOfTeamMember opacity-90">Polly Abbott</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">Chief Innovation Officer</p>
+                    </div>
+                    <div class="picture opacity-0 rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden shadow-xl">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1534030347209-467a5b0ad3e6?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List 6-->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between border-b-2 border-black relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">06</p>
+                            <p class="nameOfTeamMember opacity-90">Martha Kelley</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">COO</p>
+                    </div>
+                    <div class="picture opacity-0 rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 overflow-hidden shadow-xl">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1531891570158-e71b35a485bc?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+                <!-- List 7-->
+                <div class="listele py-[2.5rem] text-5xl decoration-1 w-full flex items-center justify-between relative">
+                    <div class="text-portion w-full z-[3] flex tems-center justify-between">
+                        <div class="list-ele-left px-5 font-thin flex gap-20 items-center justify-between">
+                            <p class="opacity-40">07</p>
+                            <p class="nameOfTeamMember opacity-90">Alma Gonzales</p>
+                        </div>
+                        <p class="designation text-3xl opacity-90 mr-5">VP of Partnership</p>
+                    </div>
+                    <div class="picture opacity-0 rounded-full h-[15rem] w-[15rem] absolute z-[4] left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2  overflow-hidden shadow-xl">
+                        <img class="object-cover" src="https://images.unsplash.com/photo-1529284607059-de6f2f0e661f?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="bluelayer w-full z-[2] absolute left-0 bottom-0 bg-blue-500"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Section end -->
+
+        <!-- Comments & Reviews -->
+        <div data-color="white" id="REVIEWS" class="parent  comments section overflow-hidden w-screen h-[180vh]  flex items-center justify-center my-40 p-6">
+            <div class="box  h-full w-full p-6 flex gap-4">
+                <div class="left-comment w-full">
+                    <div class="comment comment-1 flex flex-col items-center justify-center border-black">
+                        <h3 class="comment-first text-2xl text-center leading-[2.4rem]">Working with the Significo team has been such a pleasure! We took on a significant project to rebuild our entire platform and the team approached the project with our best interests in mind. They continue to prioritize the end user experience and offer amazing expertise in all of the areas we lack internally. I would personally be lost without this team, their ability to problem solve, their openness to feedback and desire to build the product like it is their own.</h3>
+                        <div class="person flex flex-col items-center justify-center gap-4 mt-8">
+                            <div class="person-image h-32 w-32 rounded-full overflow-hidden">
+                                <img class="" src="https://images.unsplash.com/photo-1522556189639-b150ed9c4330?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <h2 class="person-name text-2xl">Dean Swanson</h2>
+                            <h3 class="person-position text-xl opacity-50">Head of Department</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-comment h-84 w-full flex items-end">
+                    <div class="comment comment-2 flex flex-col items-center justify-center border-black">
+                        <h3 class="comment-second text-2xl text-center leading-[2.4rem]">Collaborating with the Significo team has been an absolute delight! We embarked on a major project to revamp our entire system, and the team tackled it with our best interests at heart. They consistently prioritize the end-user experience and bring exceptional expertise in all the areas where we are lacking internally. Personally, I would be at a loss without this team, their problem-solving skills, their openness to feedback, and their commitment to building the product as if it were their own.</h3>
+                        <div class="person flex flex-col items-center justify-center gap-4 mt-8">
+                            <div class="person-image h-32  w-32 rounded-full overflow-hidden">
+                                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                            </div>
+                            <h2 class="person-name text-2xl">Connor Brooks</h2>
+                            <h3 class="person-position text-xl opacity-50">Head of Department</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Comment End -->
+
+        <!-- End Section -->
+        <div data-color="lightgreen" id="MORE" class="parent capsules overflow-hidden section h-screen w-screen p-10 flex justify-between gap-4">
+            <div class="left p-5 w-[35%] h-full flex flex-col justify-between">
+                <div class="toptext w-60">
+                    <h3>Stay up-to-date on the
+                        latest healthcare
+                        innovations and thought
+                        leadership.</h3>
+                </div>
+                <div class="bottom-ad">
+                    <h2 class="text-6xl">
+                        Explore<br/>Our Insights
+                    </h2>
+                    <div class="desc-btn flex items-center justify-between border border-black/50 max-w-80 mt-6 p-6 text-lg uppercase">
+                        <div class="masker flex items-center justify-between w-full overflow-hidden">
+                            <span class="inline-block">View All Articals</span>
+                            <i class="decs-arrow fa-sharp fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="capsule-container right flex w-full justify-center gap-12">
+                <!-- -rotate-[20deg] -->
+                <div class="capsule-1 translate-y-32 border-black/50 border-2 w-[24rem] h-[48rem] -rotate-[20deg] p-5 rounded-full">
+                    <div class="circle-img h-[50%] w-full rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1661655885711-ca28a47651b5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                    <div class="text-area h-[50%] w-full flex flex-col justify-evenly p-10">
+                        <h2 class="text-2xl text-center">Digital Therapeutics Decoded: <br> A Guide to Understanding DTx and Why They're Worth Your Attention</h2>
+                        <button class=" border-2 border-black/50 p-2 rounded-full">Thought Leadership</button>
+                    </div>
+                </div>
+                <div class="capsule-2 translate-x-24 border-2 border-black/50 w-[24rem] h-[48rem] rounded-full p-5 -rotate-[20deg]">
+                    <div class="text-area h-[50%] w-full flex flex-col justify-evenly p-10">
+                        <button class=" border-2 border-black/50 p-2 rounded-full">Thought Leadership</button>
+                        <h2 class="text-2xl text-center">Equity in Tech: <br> An International Women's Day Conversation with Caroline Nieto, Significo's CPO</h2>
+                    </div>
+                    <div class="circle-img h-[50%] w-full rounded-full overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1643216831329-bd92084aa1d9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Section -->
+
+
+
+
+    </div>
+        <!-- Gsap link for animations -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js" integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@beta/bundled/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
